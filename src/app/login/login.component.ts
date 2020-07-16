@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loginUserData;
 
-  ngOnInit(): void {
+  login(){
+    console.log(this.loginUserData)
+  }
+
+  constructor(){ 
+    this.loginUserData = {};
+  }
+
+  ngOnInit(): void{
+
   }
 
 }
