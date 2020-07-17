@@ -5,14 +5,17 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  login(){
-
+  login(loginUserData){
+    console.log(loginUserData);
   }
 
   register(){
-    
+    console.log("Registering");
   }
 
+  loggedIn(){
+
+  }
   constructor(){ 
 
   }
