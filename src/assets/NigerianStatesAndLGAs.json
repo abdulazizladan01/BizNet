@@ -1,0 +1,282 @@
+[
+    {
+      "state" : "Abia",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Abuja",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Adamawa",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Akwa Ibom",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Anambra",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Bauchi",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Bayelsa",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Benue",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Borno",
+      "LGA" : [
+          {
+              "lga" : "Abadam"
+          }
+      ]
+    },
+    {
+      "state" : "Cross River",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Delta",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Ebonyi",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Edo",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Ekiti",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Enugu",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Gombe",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Imo",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Jigawa",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Kaduna",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Kano",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Katsina",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Kebbi",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Kogi",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Kwara",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Lagos",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Nasarawa",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Niger",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    }
+    {
+      "state" : "Ogun",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Osun",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Oyo",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Plateau",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Rivers",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Sokoto",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Taraba",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    },
+    {
+      "state" : "Yobe",
+      "LGA" : [
+          {
+              "lga" : ""
+          }
+      ]
+    }
+]
