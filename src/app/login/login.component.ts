@@ -10,6 +10,7 @@ import { Form } from '@angular/forms';
 export class LoginComponent implements OnInit {
 
   loginUserData;
+  
   emailErrorMessage:string;
   passwordErrorMessage:string;
 
