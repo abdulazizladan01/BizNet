@@ -22,7 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
-
+    console.log(this.registerUserData);
   }
 
   ngOnInit(): void {
