@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -7,16 +9,17 @@ export class AuthService {
 
   login(loginUserData){
     console.log(loginUserData);
+    this._route.navigateByUrl('dashboard');
   }
 
-  register(){
-    console.log("Registering");
+  register(registerUserData){
+    console.log(registerUserData);
   }
 
   loggedIn(){
 
   }
-  constructor(){ 
+  constructor(private _http: HttpClient, private _route : Router){ 
 
   }
 }

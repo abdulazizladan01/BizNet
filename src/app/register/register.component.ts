@@ -11,18 +11,21 @@ export class RegisterComponent implements OnInit {
 
   registerUserData;
 
-  constructor(){ 
+  constructor(private __auth: AuthService){ 
     this.registerUserData = {
-      "firstname" : "",
-      "lastName" : "",
-      "email" : "",
-      "password" : "",
-      "passwordVerify" : ""
     };
   }
 
   register(){
-    console.log(this.registerUserData);
+    if(this.registerUserData = {}){
+      //stop submission on account of emptiness
+     console.log("Fields cannot be empty")
+    }else if(this.registerUserData.password != this.registerUserData.passwordVerify){
+      alert("Passwords don't match")
+    }
+    else{
+      this.__auth.register(this.registerUserData);
+    }
   }
 
   ngOnInit(): void {
