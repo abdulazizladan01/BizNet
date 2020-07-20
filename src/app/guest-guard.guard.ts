@@ -5,21 +5,21 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class GuestGuardGuard implements CanActivate {
 
-  constructor(
-    private _router: Router
-  ) { }
+  constructor(private _router : Router){
+
+  }
 
   canActivate(
     next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot 
+    state: RouterStateSnapshot
     ){
-     if(
-      localStorage.getItem('access_token')
-    ) { return true;}
-    localStorage.getItem('access_token');
-    this._router.navigateByUrl('');
+      if(
+        !localStorage.getItem('access_token')
+      ){return false;}
+      this._router.navigateByUrl('/');
     return false;
-  }  
+  }
+  
 }

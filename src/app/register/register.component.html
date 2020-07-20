@@ -10,12 +10,12 @@
                 <mat-step>
                     <mat-card>
                         <mat-card-content>
-                            <mat-form-field>
+                            <mat-form-field appearance="outline">
                                 <mat-label>First name</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.firstname">
                             </mat-form-field>
 
-                            <mat-form-field>
+                            <mat-form-field appearance="outline">
                                 <mat-label>Last name</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.lastname">
                             </mat-form-field>
@@ -29,17 +29,17 @@
                 <mat-step>
                     <mat-card>
                         <mat-card-content>
-                            <mat-form-field>
+                            <mat-form-field appearance="outline">
                                 <mat-label>email</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.email">
                             </mat-form-field>
 
-                            <mat-form-field>
+                            <mat-form-field appearance="outline">
                                 <mat-label>password</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.password">
                             </mat-form-field>
 
-                            <mat-form-field>
+                            <mat-form-field appearance="outline">
                                 <mat-label>confirm password</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.passwordVerify">
                             </mat-form-field>
