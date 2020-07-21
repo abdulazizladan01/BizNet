@@ -14,6 +14,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
+import { SettingsComponent } from './dashboard/profile/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     LoginComponent,
     RegisterComponent,
     AboutComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     HttpClientModule,
