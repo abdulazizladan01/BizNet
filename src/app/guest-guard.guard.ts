@@ -15,10 +15,10 @@ export class GuestGuardGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
     ){
-      if(
-        !localStorage.getItem('access_token')
-      ){return false;}
-      this._router.navigateByUrl('/');
+      if(!localStorage.getItem('access_token')){
+        return true;
+      }
+    this._router.navigateByUrl('/');
     return false;
   }
   

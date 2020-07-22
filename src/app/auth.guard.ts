@@ -15,10 +15,10 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot 
     ){
-     if(
-      localStorage.getItem('access_token')
-    ) { return true;}
-    localStorage.getItem('access_token');
+     if(localStorage.getItem('access_token')){ 
+      return true;
+    }
+    localStorage.removeItem('access_token');
     this._router.navigateByUrl('');
     return false;
   }  

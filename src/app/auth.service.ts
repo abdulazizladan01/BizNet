@@ -11,6 +11,15 @@ export class AuthService {
   apiUrl :string = "http://localhost:8000/api";
   options : any;
 
+  constructor(private _http: HttpClient, private _route : Router){ 
+    this.options = {
+      headers : new HttpHeaders({
+        Accept : 'application/json',
+        'Content-Type': 'application/json'
+      })
+    };
+  }
+
   /* 
     Get an access token
     @param loginUserData The user emamil and password
@@ -21,11 +30,11 @@ export class AuthService {
     //this._route.navigateByUrl('dashboard');
     return this._http.post(this.authUrl, {
       grant_type : 'password',
-      client_id : '4',
-      client_secret : '',
+      client_id : '2',
+      client_secret : 'CE03AkqtZRLz4YMPTKm2Gm6enLZm5Yhc577IhKrJ',
       username : loginUserData.email,
       password : loginUserData.password,
-      scope : 'Utm7y3cpXr6H1AWZdJbMGaaAtw60fIt5g0iL9Uwv'
+      scope : ''
     }, this.options);
   }
   /**
@@ -44,11 +53,5 @@ export class AuthService {
   loggedIn(){
 
   }
-  constructor(private _http: HttpClient, private _route : Router){ 
-    this.options = {
-      headers : new HttpHeaders({
-        Accept : 'application/json'
-      })
-    }
-  }
+  
 }
