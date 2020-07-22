@@ -21,9 +21,11 @@ export class RegisterComponent implements OnInit {
       //stop submission on account of emptiness
      console.log("Fields cannot be empty")
     }else if(this.registerUserData.password != this.registerUserData.passwordVerify){
+      //Check that passwords match before submission
       alert("Passwords don't match")
     }
     else{
+      //Call the auth registration procedure
       this.__auth.register(this.registerUserData);
     }
   }
