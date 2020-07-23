@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+<mat-sidenav-container id="sidenavBody">
+    <mat-sidenav mode="over" align="start" id="sidenav" opened #nav>
+    <button mat-button (click)="nav.toggle()" routerLink="feeds">Feeds</button>
+    <button mat-button matBadge="0" matBadgePosition="before" matBadgeColor="accent" (click)="nav.toggle()" routerLink="messages">Messages</button>
+    <button mat-button (click)="nav.toggle()" routerLink="notifications">Notifications</button>
+    <button mat-button (click)="nav.toggle()" routerLink="profile">Profile</button>
+    
+    <button mat-button> Logout </button>
+    </mat-sidenav>
+    <mat-toolbar color="accent">
+        <mat-toolbar-row>
+            <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+            <span fxFlex="1 1 auto"></span>
+            <mat-form-field appearance="legacy">
+            <mat-label>Search</mat-label>
+                <input matInput type="text">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </mat-toolbar-row>
+    </mat-toolbar>
+   <router-outlet></router-outlet>    
+</mat-sidenav-container>

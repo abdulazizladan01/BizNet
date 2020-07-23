@@ -15,7 +15,7 @@ export class AuthService {
     this.options = {
       headers : new HttpHeaders({
         Accept : 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json;charset=UTF-8',
       })
     };
   }
