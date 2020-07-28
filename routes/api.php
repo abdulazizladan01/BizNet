@@ -13,9 +13,30 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::middleware('auth:sanctum')->get('users', "UserController@users");
+/*
+ * User login route
+ */
 Route::post('login', "UserController@index");
+
+/*
+ *
+ */
+Route::post('register', "UserController@register");
+
+/*
+ *
+ */
+Route::middleware('auth:sanctum')->get('users', "UserController@users");
+/*
+ *
+ */
+Route::middleware('auth:sanctum')->put('changeName', "UserController@changeName");
+/*
+ *
+ */
+Route::middleware('auth:sanctum')->put('changePassword', "UserController@changePassword");
+
+
 
 
 

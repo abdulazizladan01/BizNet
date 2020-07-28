@@ -8,7 +8,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    //
+    function register(Request $request){
+        return "Registering";
+    }
+    /* login function : Accepts email and password
+    /@Param $request
+    */
     function index(Request $request){
         $user= User::where('email', $request->email)->first();
         // print_r($data);
@@ -26,6 +31,16 @@ class UserController extends Controller
         ];
 
         return response($response, 201);
+    }
+    /*
+     * List users
+     */
+    function changeName(){
+        return "Name changed";
+    }
+
+    function changePassword(){
+        return "Password changed";
     }
 
     function users(){
