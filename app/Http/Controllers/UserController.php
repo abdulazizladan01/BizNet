@@ -9,7 +9,15 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     function register(Request $request){
-        return "Registering";
+        $data = $request->validate([
+            "first_name" => ['required'],
+            "last_name" => ['required'],
+            "email" => ['required', 'min:12'],
+            "password" => ['required', 'min:8']
+        ]);
+
+        User::create($data);
+        return response()->json(["message" => "User successfully registered!"]);
     }
     /* login function : Accepts email and password
     /@Param $request
