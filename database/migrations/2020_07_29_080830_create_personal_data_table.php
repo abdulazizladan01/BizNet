@@ -15,6 +15,9 @@ class CreatePersonalDataTable extends Migration
     {
         Schema::create('personal_data', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->date('date_of_birth');
+            $table->string('profile_pic');
             $table->timestamps();
         });
     }

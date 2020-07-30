@@ -15,6 +15,9 @@ class CreatePersonalPhoneNumbersTable extends Migration
     {
         Schema::create('personal_phone_numbers', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->smallInteger('country_code');
+            $table->bigInteger('phone_number');
             $table->timestamps();
         });
     }

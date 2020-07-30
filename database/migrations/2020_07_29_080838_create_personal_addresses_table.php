@@ -15,6 +15,10 @@ class CreatePersonalAddressesTable extends Migration
     {
         Schema::create('personal_addresses', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
+            $table->string('state');
+            $table->string('lga');
+            $table->string('street_address');
             $table->timestamps();
         });
     }
