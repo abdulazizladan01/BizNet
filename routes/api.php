@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Hash;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +36,6 @@ Route::middleware('auth:sanctum')->put('changeName', "UserController@changeName"
  *
  */
 Route::middleware('auth:sanctum')->put('changePassword', "UserController@changePassword");
-
 
 
 
