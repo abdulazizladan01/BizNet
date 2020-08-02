@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Hash;
 /*
  * User login route
  */
-Route::post('login', "UserController@index");
+Route::post('login', "UserController@login");
 
 /*
  *

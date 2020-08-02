@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Hash;
+use PhpParser\Error;
 
 class UserController extends Controller
 {
@@ -16,14 +17,20 @@ class UserController extends Controller
             "password" => ['required', 'min:8']
         ]);
         $data['password'] = Hash::make($request->password);
-        User::create($data);
-        return response()->json(["message" => "User successfully registered!"]);
+        try{
+            User::create($data);
+            return response()->json(["message" => "User successfully registered!"]);
+        }catch(PDOException $e){
+            return "Shit";
+        }
+
+
     }
 
     /* login function : Accepts email and password
     /@Param $request
     */
-    function index(Request $request){
+    function login(Request $request){
         $user= User::where('email', $request->email)->first();
         // print_r($data);
         if (!$user || !Hash::check($request->password, $user->password)) {
