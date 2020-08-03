@@ -37,7 +37,12 @@ Route::middleware('auth:sanctum')->put('changeName', "UserController@changeName"
  */
 Route::middleware('auth:sanctum')->put('changePassword', "UserController@changePassword");
 
+Route::post('sendMessage', "MessageController@sendMessage");
 
+Route::get('messageInbox', "MessageController@messageInbox");
 
+Route::get('messageOutbox', "MessageController@messageOutbox");
 
+Route::get('readSingleMessage', "MessageController@readSingleMessage");
 
+Route::delete('deleteMessage', "MessageController@deleteMessage");
