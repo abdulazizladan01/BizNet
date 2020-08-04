@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Message;
 use Illuminate\Support\Facades\Hash;
 use PhpParser\Error;
+use PhpParser\Node\Expr\AssignOp\Concat;
 
 class MessageController extends Controller
 {
