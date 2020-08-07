@@ -15,6 +15,11 @@ class CreateBusinessAddressesTable extends Migration
     {
         Schema::create('business_addresses', function (Blueprint $table) {
             $table->id();
+            $table->integer('business_id');
+            $table->string('country');
+            $table->string('state');
+            $table->string('lga');
+            $table->string('street_address');
             $table->timestamps();
         });
     }
