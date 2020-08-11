@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595462671610,
+  "timestamp": 1597005182619,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -48,6 +48,7 @@
         "/assets/img/source/banner.svg",
         "/assets/img/source/explore.svg",
         "/assets/img/source/explore.svg.2020_06_25_15_10_07.0.svg",
+        "/assets/img/source/favicon.ico",
         "/assets/img/source/grow.svg",
         "/assets/img/source/img.svg",
         "/assets/img/source/join.svg"
@@ -79,10 +80,11 @@
     "/assets/img/source/banner.svg": "7c2039101ee4d48676d0be4eae29da12c0b0188e",
     "/assets/img/source/explore.svg": "3aef1f8ebe28bd6d4ed26f2321ccc89d46cc79ee",
     "/assets/img/source/explore.svg.2020_06_25_15_10_07.0.svg": "8e5789711fdf532343c6fafbb7eeac2f1da51414",
+    "/assets/img/source/favicon.ico": "5dac429be4c0d076d8c02c0ac9ebbc03747c00e4",
     "/assets/img/source/grow.svg": "62cae5bbd344390bdb195606e0b567a13a0c1562",
     "/assets/img/source/img.svg": "9b3ddfdbaf47905cb1bc1429c01d91fcec0d09e1",
     "/assets/img/source/join.svg": "e21796f7d7c416d02d7ae28447426f10dbc8d058",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/favicon.ico": "5dac429be4c0d076d8c02c0ac9ebbc03747c00e4",
     "/index.html": "9c7ecf723f2445a82404bfa91c3a30c9c17c1f35",
     "/main-es2015.500050d62c7ca5b63465.js": "3842ffa9a1541356e4a0cf5be6938a9a1cf8c03f",
     "/main-es5.500050d62c7ca5b63465.js": "e86ace7478bded46a65fcc0696aa63ff9445d71d",
