@@ -7,17 +7,11 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  authUrl : string =  "http://localhost:8000/oauth/token";
-  apiUrl :string = "http://localhost:8000/api";
-  options : any;
+  private loginUrl : string =  "./api/public/index.php/api/login";
+  registerUrl :string = "./api/public/index.php/api/login";
 
-  constructor(private _http: HttpClient, private _route : Router){ 
-    this.options = {
-      headers : new HttpHeaders({
-        Accept : 'application/json',
-        'Content-Type': 'application/json;charset=UTF-8',
-      })
-    };
+  constructor(private _http: HttpClient, private _route : Router){
+     
   }
 
   /* 
@@ -26,28 +20,17 @@ export class AuthService {
   */
 
   login(loginUserData){
-    //console.log(loginUserData);
-    //this._route.navigateByUrl('dashboard');
-    return this._http.post(this.authUrl, {
-      grant_type : 'password',
-      client_id : '2',
-      client_secret : 'CE03AkqtZRLz4YMPTKm2Gm6enLZm5Yhc577IhKrJ',
-      username : loginUserData.email,
-      password : loginUserData.password,
-      scope : ''
-    }, this.options);
+    return this._http.post<any>(this.loginUrl, loginUserData);
   }
   /**
    * Revoke the authenticated user token
    */
 
   logout() {
-    this.options.headers.Authorization = 'Bearer ' + localStorage.getItem('access_token');
-    return this._http.get(this.apiUrl + '/token/revoke', this.options);
   }
 
   register(registerUserData){
-    console.log(registerUserData);
+    
   }
 
   loggedIn(){

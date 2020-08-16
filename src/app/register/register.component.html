@@ -11,16 +11,16 @@
                 <mat-step>
                     <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="100%">
                         <mat-card-content fxLayout="column">
-                            <mat-form-field appearance="outline">
+                            <mat-form-field appearance="legacy">
                                 <mat-label>First name</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.firstname">
-                                <mat-icon matSuffix>person</mat-icon>
+                                <mat-icon matSuffix color="accent">person</mat-icon>
                             </mat-form-field>
 
-                            <mat-form-field appearance="outline">
+                            <mat-form-field appearance="legacy">
                                 <mat-label>Last name</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.lastname">
-                                <mat-icon matSuffix>person</mat-icon>
+                                <mat-icon matSuffix color="accent">person</mat-icon>
                             </mat-form-field>
                         </mat-card-content>
                         <mat-card-actions>
@@ -32,22 +32,22 @@
                 <mat-step>
                     <mat-card>
                         <mat-card-content fxLayout="column">
-                            <mat-form-field appearance="outline">
+                            <mat-form-field appearance="legacy">
                                 <mat-label>email</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.email">
-                                <mat-icon matSuffix>mail</mat-icon>
+                                <mat-icon matSuffix color="accent">mail</mat-icon>
                             </mat-form-field>
 
-                            <mat-form-field appearance="outline">
+                            <mat-form-field appearance="legacy">
                                 <mat-label>password</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.password">
-                                <mat-icon matSuffix>lock</mat-icon>
+                                <mat-icon matSuffix color="accent">lock</mat-icon>
                             </mat-form-field>
 
-                            <mat-form-field appearance="outline">
+                            <mat-form-field appearance="legacy">
                                 <mat-label>confirm password</mat-label>
                                 <input type="text" matInput required [(ngModel)]="registerUserData.passwordVerify">
-                                <mat-icon matSuffix>lock</mat-icon>
+                                <mat-icon matSuffix color="accent">lock</mat-icon>
                             </mat-form-field>
                         </mat-card-content>
                         <mat-card-actions>
