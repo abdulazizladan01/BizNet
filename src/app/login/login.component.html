@@ -1,31 +1,35 @@
 <div id="mainBody" fxLayout="row" fxLayoutAlign="center">
-    <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="500px" class="mat-elevation-z5">
-        <mat-card-header>
-            <mat-card-title>
-                Login
-            </mat-card-title>
-        </mat-card-header>
-        <mat-card-content fxLayout="column">
-            <mat-form-field appearance="legacy">
-                <mat-label>email</mat-label>
-                <mat-icon matSuffix color="accent">person</mat-icon>
-                <input matInput type="email" required [(ngModel)]="loginUserData.email">
-                <mat-hint>{{emailErrorMessage}}</mat-hint>
+    <form [formGroup]="loginForm">
+      <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="500px" class="mat-elevation-z5">
+          <mat-card-header>
+              <mat-card-title>
+                  Login
+              </mat-card-title>
+          </mat-card-header>
+          <mat-card-content fxLayout="column">
+
+            <mat-form-field appearance="fill">
+              <mat-label>email</mat-label>
+                <input type="email" matInput formControlName="email">
+              <mat-icon matSuffix>mail</mat-icon>
+              <!--<mat-error *ngIf="email.invalid && email.touched">
+                Please enter a valid email address
+              </mat-error>-->
             </mat-form-field>
 
-            <mat-form-field appearance="legacy">
-                <mat-label>password</mat-label>
-                 <mat-icon matSuffix color="accent">lock</mat-icon>
-                <input matInput type="password" required [(ngModel)]="loginUserData.password">
-                <mat-hint>{{passwordErrorMessage}}</mat-hint>
+            <mat-form-field appearance="fill">
+              <mat-label>password</mat-label>
+              <input type="password" matInput formControlName="password">
+              <mat-icon matSuffix>lock</mat-icon>
             </mat-form-field>
-        </mat-card-content>
-        <mat-card-actions>
-            <span fxFlex="1 1 auto"></span>
-            <button mat-flat-button color="accent" (click)="login()"> Login </button>
-        </mat-card-actions>
-        <mat-card-footer>
-            Not registered? <a routerLink="./register">Register here.</a>
-        </mat-card-footer>
-    </mat-card>
+          </mat-card-content>
+          <mat-card-actions>
+              <span fxFlex="1 1 auto"></span>
+              <button mat-flat-button type="submit" [disabled]="loginForm.invalid" color="accent" (click)="login()"> Login </button>
+          </mat-card-actions>
+          <mat-card-footer>
+              Not registered? <a routerLink="./register">Register here.</a>
+          </mat-card-footer>
+      </mat-card>
+    </form>
 </div>
