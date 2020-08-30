@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1597441319837,
+  "timestamp": 1598764690505,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.55907678e39f0a915223.js",
-        "/main-es5.55907678e39f0a915223.js",
+        "/main-es2015.36697f0cc5eb8f97fec3.js",
+        "/main-es5.36697f0cc5eb8f97fec3.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.95bb65e853d2781ac3bd.js",
         "/polyfills-es5.eec9bc91a74cc31abbe8.js",
@@ -51,14 +51,15 @@
         "/assets/img/source/favicon.ico",
         "/assets/img/source/grow.svg",
         "/assets/img/source/img.svg",
-        "/assets/img/source/join.svg"
+        "/assets/img/source/join.svg",
+        "/assets/sample.json"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/NigerianStatesAndLGAs.json": "69bae61b7bdb850a51f1a17073113cb3e75a0084",
+    "/assets/NigerianStatesAndLGAs.json": "5eaff20ed51c4d7c6d509c82ca22ae4885e759b0",
     "/assets/iconfont/MaterialIcons-Regular.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
     "/assets/iconfont/MaterialIcons-Regular.ijmap": "df468e87685c24b2a5d431036d4d5a434efdc28e",
     "/assets/iconfont/MaterialIcons-Regular.svg": "52ad95c4e0691e8c9b8ef97c551a9970eb498ca0",
@@ -84,10 +85,11 @@
     "/assets/img/source/grow.svg": "62cae5bbd344390bdb195606e0b567a13a0c1562",
     "/assets/img/source/img.svg": "9b3ddfdbaf47905cb1bc1429c01d91fcec0d09e1",
     "/assets/img/source/join.svg": "e21796f7d7c416d02d7ae28447426f10dbc8d058",
+    "/assets/sample.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "/favicon.ico": "5dac429be4c0d076d8c02c0ac9ebbc03747c00e4",
-    "/index.html": "14f3e62cbbc93c0529a8df7334641c6124bfe730",
-    "/main-es2015.55907678e39f0a915223.js": "a71a52ea7daece88531ef5974b6e0f842fdcae36",
-    "/main-es5.55907678e39f0a915223.js": "419a757ab2a720f670c8a3df575091e98975ec1b",
+    "/index.html": "7a3807cb85aa395e42beb9035d2ceffbef18abe2",
+    "/main-es2015.36697f0cc5eb8f97fec3.js": "fc0895f4f7cf36a0a2a5afbeadb67d92a94cee0c",
+    "/main-es5.36697f0cc5eb8f97fec3.js": "2e8d53c2fb873f9875c217be4bc8ab67346299f3",
     "/manifest.webmanifest": "c9b61af7e1dedb7dbb6fba17f08153fcad833a80",
     "/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/polyfills-es5.eec9bc91a74cc31abbe8.js": "ff14d90e08622190714660721edab5f43578829a",
