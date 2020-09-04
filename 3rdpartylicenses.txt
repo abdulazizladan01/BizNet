@@ -128,8 +128,6 @@ THE SOFTWARE.
 
 @angular/material/snack-bar
 
-@angular/material/stepper
-
 @angular/material/toolbar
 
 @angular/platform-browser
