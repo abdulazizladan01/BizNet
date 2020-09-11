@@ -1,8 +1,21 @@
 {
     "users" : [
         {
-            "first_name" : "",
-            "last_name" : "",
+            "first_name" : "Abdulaziz",
+            "last_name" : "Ladan",
+            "title" : "Software developer",
+            "profile_pic" : ""
+        },
+        {
+            "first_name" : "Samantha",
+            "last_name" : "Jackson",
+            "title" : "Fashion designer",
+            "profile_pic" : ""
+        },
+        {
+            "first_name" : "Joshua",
+            "last_name" : "Lucas",
+            "title" : "Carpenter",
             "profile_pic" : ""
         }
     ]
