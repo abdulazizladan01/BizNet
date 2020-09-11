@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1599733910029,
+  "timestamp": 1599854137246,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.4198a7514c9d8bee6d53.js",
-        "/main-es5.4198a7514c9d8bee6d53.js",
+        "/main-es2015.8c2857373bfd6487a63f.js",
+        "/main-es5.8c2857373bfd6487a63f.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.95bb65e853d2781ac3bd.js",
         "/polyfills-es5.eec9bc91a74cc31abbe8.js",
         "/runtime-es2015.409e6590615fb48d139f.js",
         "/runtime-es5.409e6590615fb48d139f.js",
-        "/styles.7f57a73ef448653fb80d.css"
+        "/styles.f2b6a772e7911f37e49a.css"
       ],
       "patterns": []
     },
@@ -26,7 +26,9 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/assets/Businesses.json",
         "/assets/NigerianStatesAndLGAs.json",
+        "/assets/Users.json",
         "/assets/iconfont/MaterialIcons-Regular.eot",
         "/assets/iconfont/MaterialIcons-Regular.ijmap",
         "/assets/iconfont/MaterialIcons-Regular.svg",
@@ -59,7 +61,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/assets/Businesses.json": "ab5d420dc589ac1e94fb14daa54d293a720e5f0b",
     "/assets/NigerianStatesAndLGAs.json": "58fc052ce247edd56d89c05c9798b0616fb09d38",
+    "/assets/Users.json": "7e3e9f0bba5d93d1b861bbfd5eb6c862c3f6bf18",
     "/assets/iconfont/MaterialIcons-Regular.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
     "/assets/iconfont/MaterialIcons-Regular.ijmap": "df468e87685c24b2a5d431036d4d5a434efdc28e",
     "/assets/iconfont/MaterialIcons-Regular.svg": "52ad95c4e0691e8c9b8ef97c551a9970eb498ca0",
@@ -87,15 +91,15 @@
     "/assets/img/source/join.svg": "e21796f7d7c416d02d7ae28447426f10dbc8d058",
     "/assets/sample.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "/favicon.ico": "5dac429be4c0d076d8c02c0ac9ebbc03747c00e4",
-    "/index.html": "235e65fd6ca8444d52e9b6e5442142785db3f45d",
-    "/main-es2015.4198a7514c9d8bee6d53.js": "3e2da4e23266257e7fcd05a6aee6b1165970aa4d",
-    "/main-es5.4198a7514c9d8bee6d53.js": "fc2b2a0bf3c88e463f5a0d91bb22f8372f651979",
+    "/index.html": "9edde84d2b0aebfb75e2f7c5600140d686cb1f36",
+    "/main-es2015.8c2857373bfd6487a63f.js": "1d8cae7bb58a67c5c29512ebacaaf046c33ca833",
+    "/main-es5.8c2857373bfd6487a63f.js": "3dc3763574c8b5e7455cd853e5c1b77195cb6ed0",
     "/manifest.webmanifest": "c9b61af7e1dedb7dbb6fba17f08153fcad833a80",
     "/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/polyfills-es5.eec9bc91a74cc31abbe8.js": "ff14d90e08622190714660721edab5f43578829a",
     "/runtime-es2015.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/runtime-es5.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/styles.7f57a73ef448653fb80d.css": "d81605d47c95c97b388a7bd1950002608328e52a"
+    "/styles.f2b6a772e7911f37e49a.css": "f49999ce415c33cf5f1ca680cb5ce10eef611190"
   },
   "navigationUrls": [
     {

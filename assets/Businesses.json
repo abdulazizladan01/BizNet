@@ -1,0 +1,32 @@
+{
+    "businesses" : [
+      {
+        "name" : "Inverse Index",
+        "lga" : "Igabi",
+        "state" : "Kaduna",
+        "offerings" : "Android app develoment",
+        "registered_date" : "07-09-2020"
+      },
+      {
+        "name" : "Ladanski",
+        "lga" : "Igabi",
+        "state" : "Kaduna",
+        "offerings" : "Web app develoment",
+        "registered_date" : "07-09-2020"
+      },
+      {
+        "name" : "Royal Thimbles",
+        "lga" : "Igabi",
+        "state" : "Kaduna",
+        "offerings" : "Fashion design",
+        "registered_date" : "07-09-2020"
+      },
+      {
+        "name" : "Depsia Collections",
+        "lga" : "Igabi",
+        "state" : "Kaduna",
+        "offerings" : "Shoe design, fabrication and repair",
+        "registered_date" : "07-09-2020"
+      }
+    ]
+}
