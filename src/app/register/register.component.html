@@ -1,66 +1,65 @@
 <!-- The Register component, also a route that contains the registration form -->
 <div id="mainBody" fxLayout="row" fxLayoutAlign="center">
-    <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="500px">
-        <mat-card-header>
-            <mat-card-title>
-                Register
-            </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-            <mat-horizontal-stepper #stepper>
-                <mat-step>
-                    <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="100%">
-                        <mat-card-content fxLayout="column">
-                            <mat-form-field appearance="legacy">
-                                <mat-label>First name</mat-label>
-                                <input type="text" matInput required [(ngModel)]="registerUserData.firstname">
-                                <mat-icon matSuffix color="accent">person</mat-icon>
-                            </mat-form-field>
+    <mat-card fxFlexAlign="center" fxFlex.xs="90%" fxFlex.gt-xs="400px" class="mat-elevation-z5">
+         <form [formGroup]="registerForm">
+            <mat-card-header>
+                <div mat-card-avatar>
+                    <button mat-mini-fab>
+                        <mat-icon>account_circle</mat-icon>
+                    </button>
+                </div>
+                <mat-card-title>
+                    Register
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Fill in the form below to register.
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content fxLayout="column">
+                
+                <mat-form-field appearance="fill">
+                    <mat-label>First name</mat-label>
+                    <input matInput type="text" formControlName="first_name">
+                </mat-form-field>
 
-                            <mat-form-field appearance="legacy">
-                                <mat-label>Last name</mat-label>
-                                <input type="text" matInput required [(ngModel)]="registerUserData.lastname">
-                                <mat-icon matSuffix color="accent">person</mat-icon>
-                            </mat-form-field>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <span fxFlex="1 1 auto"></span>
-                            <button mat-flat-button color="accent" matStepperNext> Next </button>
-                        </mat-card-actions>
-                    </mat-card>
-                </mat-step>
-                <mat-step>
-                    <mat-card>
-                        <mat-card-content fxLayout="column">
-                            <mat-form-field appearance="legacy">
-                                <mat-label>email</mat-label>
-                                <input type="text" matInput required [(ngModel)]="registerUserData.email">
-                                <mat-icon matSuffix color="accent">mail</mat-icon>
-                            </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Last name</mat-label>
+                    <input matInput type="text" formControlName="last_name">
+                </mat-form-field>
 
-                            <mat-form-field appearance="legacy">
-                                <mat-label>password</mat-label>
-                                <input type="text" matInput required [(ngModel)]="registerUserData.password">
-                                <mat-icon matSuffix color="accent">lock</mat-icon>
-                            </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="email">
+                    <mat-icon matSuffix color="accent">mail</mat-icon>
+                </mat-form-field>
 
-                            <mat-form-field appearance="legacy">
-                                <mat-label>confirm password</mat-label>
-                                <input type="text" matInput required [(ngModel)]="registerUserData.passwordVerify">
-                                <mat-icon matSuffix color="accent">lock</mat-icon>
-                            </mat-form-field>
-                        </mat-card-content>
-                        <mat-card-actions>
-                        <button mat-flat-button color="accent" matStepperPrevious> Previous </button>
-                            <span fxFlex="1 1 auto"></span>
-                            <button mat-raised-button color="accent" (click)="register()"> Register </button>
-                        </mat-card-actions>
-                    </mat-card>
-                </mat-step>
-            </mat-horizontal-stepper>
-        </mat-card-content>
-        <mat-card-footer>
-            Already registered? <a routerLink="">Login here</a>
-        </mat-card-footer>
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                    <mat-icon matSuffix color="accent">lock</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Confirm password</mat-label>
+                    <input matInput type="password" formControlName="password_verify">
+                    <mat-icon matSuffix color="accent">lock</mat-icon>
+                    <mat-hint align="end">{{passwordMatchError}}</mat-hint>
+                </mat-form-field>
+                <mat-error *ngIf="clash">
+                    User already exists. 
+                </mat-error>
+            </mat-card-content>
+            <div *ngIf="success" class="success">
+                Registered successfully. Please login.
+            </div>
+            <mat-card-actions>
+                <span fxFlex></span>
+                <button mat-flat-button type="submit" [disabled]="registerForm.invalid" color="primary" (click)="register()" fxFlex="66%">Register</button>
+                <span fxFlex></span>
+            </mat-card-actions>
+            <mat-card-footer>
+                <p><span fxFlex></span>Already registered? <a routerLink="">Login here</a><span fxFlex></span>
+            </mat-card-footer>
+        </form>
     </mat-card>
 </div>

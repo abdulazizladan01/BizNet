@@ -1,0 +1,32 @@
+{
+    "jobs" : [
+        {
+            "title" : "Furniture construction",
+            "lga" : "Igabi",
+            "state" : "Kaduna",
+            "description" : "We need a carpenter to construct furniture for a newly furnished house. Full details shall be provided.",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Roof repair",
+            "lga" : "Apapa",
+            "state" : "Lagos",
+            "description" : "We are looking for a carpenter to help us evaluate and damages done to our roof and give us a cost estimate for the repairs.",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Cafe setup",
+            "lga" : "Awgu",
+            "state" : "Enugu",
+            "description" : "The services of an ICT personnel are needed to setup our cybercafe. This includes networking the computers to a centralized terminal.",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Chairs supply",
+            "lga" : "Danja",
+            "state" : "Katsina",
+            "description" : "We need 500 plastic chairs supplied to our secretariat. This is URGENT as we need them before independence day.",
+            "date_posted" : ""
+        }
+    ]
+}

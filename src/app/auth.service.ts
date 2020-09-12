@@ -7,8 +7,13 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private loginUrl : string =  "./api/public/index.php/api/login";
-  registerUrl :string = "./api/public/index.php/api/login";
+  //Online Urls
+  //private loginUrl : string =  "./api/index.php/api/login";
+  //private registerUrl :string = "./api/index.php/api/register";
+
+  //Offline Urls
+  private loginUrl : string =  "http://127.0.0.1:80/BizNet/api/index.php/api/login";
+  private registerUrl : string =  "http://127.0.0.1:80/BizNet/api/index.php/api/register";
 
   constructor(private _http: HttpClient, private _route : Router){
      
@@ -27,10 +32,12 @@ export class AuthService {
    */
 
   logout() {
+    localStorage.removeItem('id');
+    localStorage.removeItem('token');
   }
 
   register(registerUserData){
-    
+    return this._http.post<any>(this.registerUrl, registerUserData);
   }
 
   loggedIn(){

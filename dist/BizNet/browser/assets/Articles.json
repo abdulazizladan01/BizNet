@@ -1,0 +1,34 @@
+{
+    "articles" : [
+        {
+            "title" : "Raising Broiler chickens",
+            "author" : "Chinwe Pullet",
+            "body" : "",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Basic computer repair",
+            "author" : "Teejay Alaba",
+            "body" : "",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Data science opportunities",
+            "author" : "Umar Usman",
+            "body" : "",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Mobile photography",
+            "author" : "Khalifa Umar",
+            "body" : "",
+            "date_posted" : ""
+        },
+        {
+            "title" : "Animation in Nigeria",
+            "author" : "J P Carpenter",
+            "body" : "Blah blah blah...",
+            "date_posted" : ""
+        }
+    ]
+}

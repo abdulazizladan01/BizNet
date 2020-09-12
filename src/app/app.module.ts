@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
+import { TokenInterceptorInterceptor } from './token-interceptor.interceptor'; 
 
 import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +16,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AboutComponent } from './about/about.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { BusinessComponent } from './dashboard/home/business/business.component';
+import { MessagesComponent } from './dashboard/messages/messages.component';
+import { NotificationsComponent } from './dashboard/notifications/notifications.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { SettingsComponent } from './dashboard/profile/settings/settings.component';
 import { RouterModule } from '@angular/router';
@@ -25,8 +31,13 @@ import { RouterModule } from '@angular/router';
     RegisterComponent,
     AboutComponent,
     DashboardComponent,
+    HomeComponent,
+    BusinessComponent,
+    MessagesComponent,
+    NotificationsComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    MessagesComponent
   ],
   imports: [
     HttpClientModule,
@@ -39,7 +50,11 @@ import { RouterModule } from '@angular/router';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     RouterModule
   ],
-  providers: [],
+  providers: [AuthGuard, {
+    provide : HTTP_INTERCEPTORS,
+    useClass : TokenInterceptorInterceptor,
+    multi : true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

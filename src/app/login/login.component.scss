@@ -1,3 +1,20 @@
 #mainBody{
     height: 100%;
 }
+.mat-card{
+  padding:1 !important;
+  .mat-card-header{
+    //background-color:#0D47A1 !important;
+    //color: #ffffff;
+    font-weight: bold;
+    padding:15px !important;
+  }
+  .mat-card-content{
+    padding:0px !important;
+    margin-top: 20px;
+  }
+  .mat-card-footer{
+    padding:0px !important;
+  }
+}
+

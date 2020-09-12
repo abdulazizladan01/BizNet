@@ -1,0 +1,126 @@
+{
+  "configVersion": 1,
+  "timestamp": 1599902708611,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.304e68c64ff77e1e39ff.js",
+        "/main-es5.304e68c64ff77e1e39ff.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.95bb65e853d2781ac3bd.js",
+        "/polyfills-es5.eec9bc91a74cc31abbe8.js",
+        "/runtime-es2015.409e6590615fb48d139f.js",
+        "/runtime-es5.409e6590615fb48d139f.js",
+        "/styles.a907f1e769d4c9d3d1ba.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/Articles.json",
+        "/assets/Businesses.json",
+        "/assets/Jobs.json",
+        "/assets/NigerianStatesAndLGAs.json",
+        "/assets/Users.json",
+        "/assets/iconfont/MaterialIcons-Regular.eot",
+        "/assets/iconfont/MaterialIcons-Regular.ijmap",
+        "/assets/iconfont/MaterialIcons-Regular.svg",
+        "/assets/iconfont/MaterialIcons-Regular.ttf",
+        "/assets/iconfont/MaterialIcons-Regular.woff",
+        "/assets/iconfont/MaterialIcons-Regular.woff2",
+        "/assets/iconfont/README.md",
+        "/assets/iconfont/codepoints",
+        "/assets/iconfont/material-icons.css",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/img/source/BizNetLogo.svg",
+        "/assets/img/source/banner.svg",
+        "/assets/img/source/explore.svg",
+        "/assets/img/source/explore.svg.2020_06_25_15_10_07.0.svg",
+        "/assets/img/source/favicon.ico",
+        "/assets/img/source/grow.svg",
+        "/assets/img/source/img.svg",
+        "/assets/img/source/join.svg",
+        "/assets/sample.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/Articles.json": "ebd3c2cde947725a4b01b8f806da1b041ff2bbbd",
+    "/assets/Businesses.json": "ab5d420dc589ac1e94fb14daa54d293a720e5f0b",
+    "/assets/Jobs.json": "d94d04a1b75fb2a11ec5413a82dfcdd06e8326fd",
+    "/assets/NigerianStatesAndLGAs.json": "58fc052ce247edd56d89c05c9798b0616fb09d38",
+    "/assets/Users.json": "9e556a2d8b580595804f2b23d948bfd5f2938911",
+    "/assets/iconfont/MaterialIcons-Regular.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
+    "/assets/iconfont/MaterialIcons-Regular.ijmap": "df468e87685c24b2a5d431036d4d5a434efdc28e",
+    "/assets/iconfont/MaterialIcons-Regular.svg": "52ad95c4e0691e8c9b8ef97c551a9970eb498ca0",
+    "/assets/iconfont/MaterialIcons-Regular.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
+    "/assets/iconfont/MaterialIcons-Regular.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
+    "/assets/iconfont/MaterialIcons-Regular.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
+    "/assets/iconfont/README.md": "867c099a181af04de39152d48aee013a01fcd1cd",
+    "/assets/iconfont/codepoints": "9f50ec0cced0115e7786e4e26b53ff35d2c0f0a0",
+    "/assets/iconfont/material-icons.css": "d45506350e35c369dca6d1ed299b3688e590db8d",
+    "/assets/icons/icon-128x128.png": "62fc09559f117865d025a61a4210cda9e1bc0fe1",
+    "/assets/icons/icon-144x144.png": "306b2582ec6dccb26ae2c62a456d2660daed55e8",
+    "/assets/icons/icon-152x152.png": "96acfb66dd889bff1c3e9e518a24afef3890f574",
+    "/assets/icons/icon-192x192.png": "f4816faa6911232ff712b9c4c2c5ba51502c9341",
+    "/assets/icons/icon-384x384.png": "7761474c4f34e7f253a2a745cb17b7ffed9364b5",
+    "/assets/icons/icon-512x512.png": "9b2e5b75e616b1a399b4237dfa467fcb53bc8fd2",
+    "/assets/icons/icon-72x72.png": "fb3e80276e116ab7506c91aa5e28c78e08b4f464",
+    "/assets/icons/icon-96x96.png": "6aba1f28cc0dd59ef2f843436bc77bf5b7791477",
+    "/assets/img/source/BizNetLogo.svg": "ff80c7997671ba42680eee88af7d68daf8617d11",
+    "/assets/img/source/banner.svg": "7c2039101ee4d48676d0be4eae29da12c0b0188e",
+    "/assets/img/source/explore.svg": "3aef1f8ebe28bd6d4ed26f2321ccc89d46cc79ee",
+    "/assets/img/source/explore.svg.2020_06_25_15_10_07.0.svg": "8e5789711fdf532343c6fafbb7eeac2f1da51414",
+    "/assets/img/source/favicon.ico": "5dac429be4c0d076d8c02c0ac9ebbc03747c00e4",
+    "/assets/img/source/grow.svg": "62cae5bbd344390bdb195606e0b567a13a0c1562",
+    "/assets/img/source/img.svg": "9b3ddfdbaf47905cb1bc1429c01d91fcec0d09e1",
+    "/assets/img/source/join.svg": "e21796f7d7c416d02d7ae28447426f10dbc8d058",
+    "/assets/sample.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "/favicon.ico": "bef4f3a02bb4a56787caaa4ae40f62ace5dc4c54",
+    "/index.html": "c30d0d2f5e443808b1e035d426638692b1c417e5",
+    "/main-es2015.304e68c64ff77e1e39ff.js": "303b851052ad73a62b3628d06bd0a4d38456359c",
+    "/main-es5.304e68c64ff77e1e39ff.js": "cc316f4231faf54faad1a721ae02e0d6a7730bb1",
+    "/manifest.webmanifest": "c9b61af7e1dedb7dbb6fba17f08153fcad833a80",
+    "/polyfills-es2015.95bb65e853d2781ac3bd.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/polyfills-es5.eec9bc91a74cc31abbe8.js": "ff14d90e08622190714660721edab5f43578829a",
+    "/runtime-es2015.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.409e6590615fb48d139f.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.a907f1e769d4c9d3d1ba.css": "456955408c8dd9438f0f82b6ddc75f98da9ac021"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

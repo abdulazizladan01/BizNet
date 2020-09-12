@@ -1,0 +1,212 @@
+<mat-tab-group>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon>
+                list
+            </mat-icon>
+            <span fxHide.lt-sm>Businesses</span>
+        </ng-template>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span fxFlex></span>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Search">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="5% 50px" fxLayoutAlign="space-around">
+     
+            <mat-card *ngFor="let business of businesses" fxFlex.xs="100%" fxFlex.sm="45%" fxFlex.gt-sm="20%">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab>
+                            <mat-icon>person</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-title>
+                        {{ business.name }}
+                    </mat-card-title>                
+                    <mat-card-subtitle>
+                        {{ business.lga }}, {{ business.state }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    My business offers {{ business.offerings }}
+                </mat-card-content>
+                <mat-card-actions>
+                    <span fxFlex></span>
+                    <button mat-flat-button color="primary">
+                        <mat-icon>
+                            visibility
+                        </mat-icon>
+                        View details
+                    </button>
+                </mat-card-actions>
+                <mat-card-footer>
+                    <span fxFlex></span>
+                    Registered on date : {{ business.registered_date }}
+                </mat-card-footer>
+
+            </mat-card>
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon>
+                persons
+            </mat-icon>
+            <span fxHide.lt-sm>Users</span>
+        </ng-template>
+
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span fxFlex></span>
+                <mat-form-field color="primary">
+                    <input matInput type="text" placeholder="Search">
+                    <mat-icon color="primary" matSuffix>search</mat-icon>
+                </mat-form-field>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="space-around">
+     
+            <mat-card *ngFor="let user of users" fxFlex.xs="100%" fxFlex.sm="45%" fxFlex.gt-sm="23%">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab>
+                            <mat-icon>person</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-title>
+                        {{ user.first_name }} {{ user.last_name }}
+                    </mat-card-title>                
+                    <mat-card-subtitle>
+                        {{ user.title }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    
+                </mat-card-content>
+                <mat-card-actions>
+                    <span fxFlex></span>
+                    <button mat-flat-button color="primary">
+                        <mat-icon>
+                            visibility
+                        </mat-icon>
+                        View details
+                    </button>
+                </mat-card-actions>
+                <mat-card-footer>
+                    <span fxFlex></span>
+                    
+                </mat-card-footer>
+            </mat-card>
+
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon>
+                library_books
+            </mat-icon>
+            <span fxHide.lt-sm>Articles</span>
+        </ng-template>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span fxFlex></span>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Search">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="start">
+     
+            <mat-card *ngFor="let article of articles" fxFlex.xs="100%" fxFlex.sm="45%" fxFlex.gt-sm="23%">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab>
+                            <mat-icon>library_books</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-title>
+                        {{ article.title }}
+                    </mat-card-title>                
+                    <mat-card-subtitle>
+                        {{ article.author }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    {{ article.body }}
+                </mat-card-content>
+                <mat-card-actions>
+                    <span fxFlex></span>
+                    <button mat-flat-button color="primary">
+                        <mat-icon>
+                            visibility
+                        </mat-icon>
+                        View details
+                    </button>
+                </mat-card-actions>
+                <mat-card-footer>
+                    <span fxFlex></span>
+                    
+                </mat-card-footer>
+            </mat-card>
+
+        </div>
+    </mat-tab>
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <mat-icon>
+                work
+            </mat-icon>
+            <span fxHide.lt-sm>Jobs</span>
+        </ng-template>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span fxFlex></span>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Search">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div fxLayout.xs="column" fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="space-around">
+     
+            <mat-card *ngFor="let job of jobs" fxFlex.xs="100%" fxFlex.sm="45%" fxFlex.gt-sm="23%">
+                <mat-card-header>
+                    <div mat-card-avatar>
+                        <button mat-mini-fab>
+                            <mat-icon>work</mat-icon>
+                        </button>
+                    </div>
+                    <mat-card-title>
+                        {{ job.title }}
+                    </mat-card-title>                
+                    <mat-card-subtitle>
+                        {{ job.lga }}, {{ job.state }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    {{ job.description }}
+                </mat-card-content>
+                <mat-card-actions>
+                    <span fxFlex></span>
+                    <button mat-flat-button color="primary">
+                        <mat-icon>
+                            visibility
+                        </mat-icon>
+                        View details
+                    </button>
+                </mat-card-actions>
+                <mat-card-footer>
+                    <span fxFlex></span>
+                    
+                </mat-card-footer>
+            </mat-card>
+
+        </div>
+    </mat-tab>
+</mat-tab-group>   
+

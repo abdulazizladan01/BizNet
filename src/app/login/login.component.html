@@ -1,17 +1,28 @@
+<!--
+
+ -->
 <div id="mainBody" fxLayout="row" fxLayoutAlign="center">
-    <form [formGroup]="loginForm">
-      <mat-card fxFlexAlign="center" fxFlex.xs="100%" fxFlex.gt-xs="500px" class="mat-elevation-z5">
+      <mat-card fxFlexAlign="center" fxFlex.xs="90%" fxFlex.gt-xs="400px" class="mat-elevation-z5">
+      <form [formGroup]="loginForm">
           <mat-card-header>
-              <mat-card-title>
-                  Login
-              </mat-card-title>
+            <div mat-card-avatar>
+              <button mat-mini-fab>
+                <mat-icon>account_circle</mat-icon>
+              </button>
+            </div>
+            <mat-card-title>
+                Login
+            </mat-card-title>
+            <mat-card-subtitle>
+              Fill in your credentials to log in.
+            </mat-card-subtitle>
           </mat-card-header>
-          <mat-card-content fxLayout="column">
+          <mat-card-content fxLayout="column" fxLayoutGap="30px" fxLayoutAlign="space-around">
 
             <mat-form-field appearance="fill">
               <mat-label>email</mat-label>
                 <input type="email" matInput formControlName="email">
-              <mat-icon matSuffix>mail</mat-icon>
+                <mat-icon matSuffix color="accent">mail</mat-icon>
               <!--<mat-error *ngIf="email.invalid && email.touched">
                 Please enter a valid email address
               </mat-error>-->
@@ -20,16 +31,21 @@
             <mat-form-field appearance="fill">
               <mat-label>password</mat-label>
               <input type="password" matInput formControlName="password">
-              <mat-icon matSuffix>lock</mat-icon>
+              <mat-icon matSuffix color="accent">lock</mat-icon>
             </mat-form-field>
+            <mat-error *ngIf="invalid">
+              Invalid login credentials.
+            </mat-error>
           </mat-card-content>
           <mat-card-actions>
-              <span fxFlex="1 1 auto"></span>
-              <button mat-flat-button type="submit" [disabled]="loginForm.invalid" color="accent" (click)="login()"> Login </button>
+              <span fxFlex></span>
+              <button mat-flat-button type="submit" [disabled]="loginForm.invalid" color="primary" (click)="login()" fxFlex="66%"> Login </button>
+              <span fxFlex></span>
           </mat-card-actions>
           <mat-card-footer>
-              Not registered? <a routerLink="./register">Register here.</a>
+              <p><span fxFlex></span>Not registered? <a routerLink="./register">Register here.</a><span fxFlex></span>
           </mat-card-footer>
+          </form>
       </mat-card>
-    </form>
+    
 </div>

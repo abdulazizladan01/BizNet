@@ -11,14 +11,23 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
-  success = false;
+  invalid = false;
 
   constructor(private _auth : AuthService, private _router: Router, private fb: FormBuilder) {
 
   }
 
  login(){
-    console.log(this.loginForm.value)
+    this._auth.login(this.loginForm.value).subscribe(
+      res => {
+        localStorage.setItem('id', res.user.id)
+        localStorage.setItem('token', res.token)
+        this._router.navigate(['/dashboard']);
+      },
+      err => {
+        this.invalid = true;
+      }
+    )
   }
 
   ngOnInit(): void{
@@ -30,8 +39,7 @@ export class LoginComponent implements OnInit {
         ]
       ],
       password : ['',[
-          Validators.required,
-        Validators.minLength(6)
+          Validators.required
         ]
       ]
     })

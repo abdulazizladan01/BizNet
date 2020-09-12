@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$BizNet-primary: mat-palette($mat-grey, 900);
-$BizNet-accent: mat-palette($mat-blue, 900);
+$BizNet-primary: mat-palette($mat-blue, 900);
+$BizNet-accent: mat-palette($mat-blue, 500);
 
 // The warn palette is optional (defaults to red).
 $BizNet-warn: mat-palette($mat-red);
@@ -35,4 +35,8 @@ html, body {
 body{
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: linear-gradient(180deg, #0D47A1, #ffffff);
+}
+button.mat-button {
+   //border-radius: 50%;
 }
