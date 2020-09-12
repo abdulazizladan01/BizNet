@@ -2,7 +2,7 @@
   "name": "BizNet",
   "short_name": "BizNet",
   "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "background_color": "#2196f3ff",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

@@ -1,0 +1,10 @@
+{
+    "outbox" : [
+        {
+            "recipient" : "",
+            "subject" : "",
+            "body" : "",
+            "time_sent" : ""
+        }
+    ]
+}
