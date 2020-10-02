@@ -17,5 +17,10 @@ module.exports = {
 				return callBack(null, results)
 			}
 		)
+	}.
+	login : (data, callBack) => {
+		pool.query(
+			
+		)
 	}
 }
