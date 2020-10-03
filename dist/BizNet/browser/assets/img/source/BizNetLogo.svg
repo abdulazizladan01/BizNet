@@ -14,7 +14,10 @@
    version="1.1"
    viewBox="0 0 132.29166 132.29167"
    height="500"
-   width="500">
+   width="500"
+   inkscape:export-filename="/home/abdulaziz/Documents/wip/Developer/myNewGitAccount/BizNet/frontend/src/favicon.ico.png"
+   inkscape:export-xdpi="3.0699999"
+   inkscape:export-ydpi="3.0699999">
   <defs
      id="defs2">
     <linearGradient
@@ -67,9 +70,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer2"
      inkscape:document-units="mm"
-     inkscape:cy="273.83615"
-     inkscape:cx="164.78624"
-     inkscape:zoom="0.98994949"
+     inkscape:cy="239.14252"
+     inkscape:cx="135.37803"
+     inkscape:zoom="0.7"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"

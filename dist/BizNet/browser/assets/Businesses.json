@@ -5,7 +5,13 @@
         "lga" : "Igabi",
         "state" : "Kaduna",
         "offerings" : "Android app develoment",
-        "registered_date" : "07-09-2020"
+        "registered_date" : "07-09-2020",
+        "services" : [
+
+        ],
+        "goods" : [
+          
+        ]
       },
       {
         "name" : "Ladanski",

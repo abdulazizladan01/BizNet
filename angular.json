@@ -166,6 +166,6 @@
   },
   "defaultProject": "BizNet",
   "cli": {
-    "analytics": false
+    "analytics": true
   }
 }
