@@ -1,0 +1,38 @@
+{
+  "name": "biznet",
+  "version": "1.0.0",
+  "description": "Backend for BizNet",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulazizladan01/BizNet%20node.git"
+  },
+  "keywords": [
+    "biznet",
+    "api"
+  ],
+  "author": "Abdulaziz Ladan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulazizladan01/BizNet%20node/issues"
+  },
+  "homepage": "https://github.com/abdulazizladan01/BizNet%20node#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "email": "^0.2.6",
+    "events": "^3.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
