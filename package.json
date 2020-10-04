@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1000.5",
-    "@angular/cli": "~9.0.4",
+    "@angular/cli": "^10.1.4",
     "@angular/compiler-cli": "~9.0.3",
     "@angular/language-service": "~9.0.3",
     "@nativescript/schematics": "^10.0.2",
